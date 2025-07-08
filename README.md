@@ -84,11 +84,6 @@ if __name__ == "__main__":
     # Generates and opens flight map
 ```
 
----
-
-## 📷 Screenshots
-
-> _(Add your own screenshots here showing console output and generated HTML map.)_
 
 ---
 
