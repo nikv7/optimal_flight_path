@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7b503ef2947b999c1a46274735cce018 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7b503ef2947b999c1a46274735cce018" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7b503ef2947b999c1a46274735cce018 = L.map(
+                "map_7b503ef2947b999c1a46274735cce018",
+                {
+                    center: [25.83668, 1.6253799999999998],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e6fe453a53f543b7ee5288906f6ad9e9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e6fe453a53f543b7ee5288906f6ad9e9.addTo(map_7b503ef2947b999c1a46274735cce018);
+        
+    
+            var marker_e7bd9a0d20683afa28c1eafa5d06b10b = L.marker(
+                [11.031026, 77.03893],
+                {
+}
+            ).addTo(map_7b503ef2947b999c1a46274735cce018);
+        
+    
+            var icon_6439ed223f9f8beee9b8adb0ea803f53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_680723603da3612dd659198767643bea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba0ae702139979c9928df1ecb189f6ec = $(`<div id="html_ba0ae702139979c9928df1ecb189f6ec" style="width: 100.0%; height: 100.0%;">     <b>Origin: CJB</b><br>     Name: Peelamedu<br>     Coords: (11.0310, 77.0389)     </div>`)[0];
+                popup_680723603da3612dd659198767643bea.setContent(html_ba0ae702139979c9928df1ecb189f6ec);
+            
+        
+
+        marker_e7bd9a0d20683afa28c1eafa5d06b10b.bindPopup(popup_680723603da3612dd659198767643bea)
+        ;
+
+        
+    
+    
+            marker_e7bd9a0d20683afa28c1eafa5d06b10b.bindTooltip(
+                `<div>
+                     Origin: CJB (Peelamedu)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e7bd9a0d20683afa28c1eafa5d06b10b.setIcon(icon_6439ed223f9f8beee9b8adb0ea803f53);
+            
+    
+            var marker_5ec07f336c6165ae54dd458ff7c44683 = L.marker(
+                [40.642334, -73.78817],
+                {
+}
+            ).addTo(map_7b503ef2947b999c1a46274735cce018);
+        
+    
+            var icon_f111958b5b9631d2a8e50d02b73a4092 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e04e7871e47c1af113a1e0df3ee05cf4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36c25d1bd89a232c9a1ae6ac94e9ca55 = $(`<div id="html_36c25d1bd89a232c9a1ae6ac94e9ca55" style="width: 100.0%; height: 100.0%;">     <b>Destination: JFK</b><br>     Name: John F Kennedy International<br>     Coords: (40.6423, -73.7882)<br>     ---<br>     <b>Estimated Metrics:</b><br>     Distance: 13,533.94 km<br>     Time: 16.31 hours<br>     Fuel: 40,764.88 kg     </div>`)[0];
+                popup_e04e7871e47c1af113a1e0df3ee05cf4.setContent(html_36c25d1bd89a232c9a1ae6ac94e9ca55);
+            
+        
+
+        marker_5ec07f336c6165ae54dd458ff7c44683.bindPopup(popup_e04e7871e47c1af113a1e0df3ee05cf4)
+        ;
+
+        
+    
+    
+            marker_5ec07f336c6165ae54dd458ff7c44683.bindTooltip(
+                `<div>
+                     Destination: JFK (John F Kennedy International)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5ec07f336c6165ae54dd458ff7c44683.setIcon(icon_f111958b5b9631d2a8e50d02b73a4092);
+            
+    
+            var poly_line_d8044752abe2b6fb0736fcd44c604d4c = L.polyline(
+                [[11.031026, 77.03893], [40.642334, -73.78817]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7b503ef2947b999c1a46274735cce018);
+        
+    
+            poly_line_d8044752abe2b6fb0736fcd44c604d4c.bindTooltip(
+                `<div>
+                     Great Circle Path: 13,533.94 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
